@@ -1,0 +1,8 @@
+[phases.install]
+dependsOn = ["setup"]
+cmds = [
+  "npm install -g corepack@0.24.1 && corepack enable",
+  "pnpm install"
+]
+cacheDirectories = ["/root/.local/share/pnpm/store/v3"]
+paths = ["/app/node_modules/.bin"]
